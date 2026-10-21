@@ -2,7 +2,6 @@
 
 {
   services = {
-    displayManager.dms-greeter.enable = true;
     printing.enable = true;
     openssh.enable = true;
     udisks2.enable = true;
