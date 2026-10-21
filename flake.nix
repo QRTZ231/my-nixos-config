@@ -12,17 +12,12 @@
       url = "github:AvengeMedia/dms-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    mocktail = {
-      url = "github:komaruworld/mocktail";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
   outputs = inputs@{
     self,
     nixpkgs,
     home-manager,
     dms-plugin-registry,
-    mocktail,
     ...
   }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
