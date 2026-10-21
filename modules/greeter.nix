@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 # DMS Greeter
+# For the password, type in the terminal "passwd <username>"
 {
   services.displayManager.dms-greeter = {
     enable = true;
